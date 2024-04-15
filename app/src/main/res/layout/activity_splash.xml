@@ -4,43 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spalsh_screen"
+    android:background="@color/black"
     tools:context=".SplashActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="211dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="228dp"
-        android:src="@drawable/white_cloud"
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/lottieAnimationViewSP"
+        android:layout_width="359dp"
+        android:layout_height="217dp"
+
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splash1ani" />
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/lottieAnimationView2SP"
+        android:layout_width="331dp"
+        android:layout_height="204dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splash2ani" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather Ki Jankar,\n Har Pal Taiyaar"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Weather Ka Jankar, \n Har Pal Teyar"
         android:textColor="@color/white"
-        android:layout_marginTop="67dp"
-        android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:fontFamily="@font/merriweathersans_bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBottom_toTopOf="@+id/lottieAnimationView2SP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/merriweathersans_bold"
         android:text="Design  By  \n AKHIL"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
